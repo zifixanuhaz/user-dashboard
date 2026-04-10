@@ -1,0 +1,31 @@
+{
+  "status": "healthy",
+  "timestamp": "2024-02-29T10:30:00Z",
+  "uptime": 3600,
+  "version": "1.2.3",
+  "components": {
+    "database": {
+      "status": "healthy",
+      "responseTime": 0.025,
+      "connections": 10
+    },
+    "api": {
+      "status": "healthy",
+      "responseTime": 0.010,
+      "activeRequests": 50
+    },
+    "cache": {
+      "status": "degraded",
+      "errorRate": 0.05,
+      "message": "Cache latency slightly elevated."
+    }
+  },
+  "metrics": {
+    "cpuUsage": 0.65,
+    "memoryUsage": 0.75,
+    "diskUsage": 0.80
+  },
+  "warnings": [
+    "High disk usage detected."
+  ]
+}
